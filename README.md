@@ -98,6 +98,7 @@ python .github/pages_build.py --build
 | 경로 표시(현재 위치) 영역 이름 | `site/layouts/_partials/breadcrumbs.html` |
 | 본문 영역 id(본문 바로가기 대상) | `site/layouts/baseof.html` |
 | 없는 주소로 왔을 때 보이는 안내 | `site/layouts/404.html` |
+| 페이지 제목(404 한국어)·검색 노출(404 noindex) | `site/layouts/_partials/head.html` |
 | 404·긴 URL·표 스타일 | `site/assets/css/extended/pages.css` |
 | 파비콘 | `site/static/` |
 
@@ -200,7 +201,7 @@ MyWebPage/
 | 배포 준비 스크립트·워크플로 | `prepare_github_pages.py`, `.github/` | 수업 제공 | 초급프로젝트 수업 자료 (v3.1) | 수업 자료 |
 | 사이트 설정·글 | `site/pages.json`, `site/content/` | AI 초안 + 본인 확인 | Claude로 초안 작성, 본인 정보·사실 확인과 수정 | 본 과제용 |
 | 추가 CSS | `site/assets/css/extended/focus.css`, `pages.css` | AI 생성 후 본인 검토 | Claude | 본 과제용 |
-| 레이아웃 덮어쓰기 | `site/layouts/` (header·footer·breadcrumbs·baseof·social_icons·404) | 외부 자료 수정 | PaperMod 원본 파일을 복사해 바꾼 줄만 주석으로 표시 (Claude 도움) | MIT License (원본 출처 유지) |
+| 레이아웃 덮어쓰기 | `site/layouts/` (head·header·footer·breadcrumbs·baseof·social_icons·404) | 외부 자료 수정 | PaperMod 원본 파일을 복사해 바꾼 줄만 주석으로 표시 (Claude 도움) | MIT License (원본 출처 유지) |
 | 파비콘 5개 | `site/static/` | AI 생성 | Claude (Python Pillow로 생성) | 본 과제용 |
 | 대표 활동 근거 | 활동 페이지 링크 | 본인 팀 프로젝트 | https://github.com/sususk2/capstone | 팀 저장소 |
 
