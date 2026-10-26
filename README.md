@@ -149,6 +149,19 @@ push 후 시크릿 창에서 확인합니다.
 | `docs` | README 등 문서 |
 | `chore` | 저장소 관리 파일 (.gitignore 등) |
 
+## 유효 커밋 집계 방법
+
+과제 보고서 4장에 적는 개수를 다음 명령으로 셉니다.
+
+```bash
+git fetch origin
+git rev-list --count origin/main                 # 전체 커밋 수 (N)
+git log --oneline origin/main | tail -1          # 가장 오래된 커밋 = 원본 ZIP 등록(905ed2d) → 제외 (E = 1)
+git log --merges --oneline origin/main           # 병합 커밋 (없어야 함)
+```
+
+유효 커밋 = N − E. 원본 ZIP 등록처럼 본인 작성 내용이 없는 커밋만 제외합니다.
+
 ## 자주 나는 문제
 
 | 증상 | 원인 | 해결 |
