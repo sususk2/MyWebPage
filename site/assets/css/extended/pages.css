@@ -1,0 +1,24 @@
+/* 404 안내 페이지 */
+.not-found-page {
+    padding: 64px 0;
+    text-align: center;
+}
+
+.not-found-page h1 {
+    font-size: 64px;
+    margin-bottom: 16px;
+}
+
+.not-found-page ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 24px;
+    justify-content: center;
+}
+
+.not-found-page a {
+    text-decoration: underline;
+}
