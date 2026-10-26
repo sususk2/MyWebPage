@@ -25,7 +25,7 @@
 | 페이지 | 주소 | 내용 |
 |--------|------|------|
 | 홈 | `/MyWebPage/` | 이름, 한 줄 소개, 소개·활동 버튼, GitHub 아이콘 |
-| 소개 | `/MyWebPage/about/` | 자기소개 `#intro`, 관심 분야 `#interests`, 역량 `#skills` |
+| 소개 | `/MyWebPage/about/` | 자기소개 `#intro`, 관심 분야 `#interests`, 학습 목표 `#goals`, 역량 `#skills` |
 | 활동 목록 | `/MyWebPage/projects/` | 활동 2개 |
 | 대표 활동 | `/MyWebPage/projects/activity-1/` | 캡스톤 AI 리포트: `#period` `#purpose` `#role` `#process` `#result` `#lessons` |
 | 활동 2 | `/MyWebPage/projects/portfolio-site/` | 이 사이트 제작 과정, 점검 기록 `#checks` |
@@ -88,7 +88,7 @@ python .github/pages_build.py --build
 | 바꾸고 싶은 것 | 파일 |
 |----------------|------|
 | 사이트 제목, 홈 이름·한 줄 소개, 홈 버튼, 상단 메뉴, GitHub 링크, 언어 | `site/pages.json` |
-| 소개 페이지 (자기소개·관심 분야·역량) | `site/content/about.md` |
+| 소개 페이지 (자기소개·관심 분야·학습 목표·역량) | `site/content/about.md` |
 | 활동 목록 페이지 설명 | `site/content/projects/_index.md` |
 | 대표 활동 글 | `site/content/projects/activity-1.md` |
 | 키보드 초점 표시·본문 바로가기·동작 줄이기 스타일 | `site/assets/css/extended/focus.css` |
