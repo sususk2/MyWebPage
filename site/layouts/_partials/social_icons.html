@@ -1,0 +1,11 @@
+{{- /* 테마 원본(themes/template/layouts/_partials/social_icons.html)을 덮어씀.
+     아이콘만 있는 링크에 접근 가능한 이름(aria-label)을 추가 (P46) */ -}}
+<div class="social-icons" {{ with .align}}align="{{.}}" {{- end }}>
+    {{- range site.Params.socialIcons }}
+    {{- $label := .title | default .name }}
+    <a href="{{ trim .url " " | safeURL }}" target="_blank" rel="noopener noreferrer me"
+        title="{{ $label }}" aria-label="{{ $label }} (새 창)">
+        {{ partial "svg.html" . }}
+    </a>
+    {{- end }}
+</div>
