@@ -19,3 +19,9 @@ summary:focus-visible,
 #menu a:focus-visible {
     outline-offset: -3px;
 }
+
+/* 상단 메뉴 링크에 좌우 여백을 주어 안쪽 초점선이 글자에 붙지 않게 함 */
+#menu a {
+    padding: 0 6px;
+    border-radius: 4px;
+}
