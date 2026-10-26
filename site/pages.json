@@ -76,5 +76,9 @@
       }
     ]
   },
-  "timeZone": "Asia/Seoul"
+  "timeZone": "Asia/Seoul",
+  "disableKinds": [
+    "taxonomy",
+    "term"
+  ]
 }
