@@ -10,3 +10,11 @@
 **/resources/_gen/
 **/.hugo_build.lock
 /.github-pages-setup-backups/
+
+# 운영체제·편집기 임시 파일
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/
+*.swp
