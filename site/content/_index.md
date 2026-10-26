@@ -1,4 +1,3 @@
 ---
-title: Welcome
+title: "홈"
 ---
-Welcome to my website.
