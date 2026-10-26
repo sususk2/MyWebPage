@@ -4,6 +4,7 @@ date: 2026-10-27
 description: "초급프로젝트 과제로 Hugo 테마를 골라 개인 소개 사이트를 만들고 GitHub Actions로 자동 배포한 과정"
 summary: "PaperMod 테마로 개인 소개 사이트를 만들고, push하면 자동 배포되도록 구성한 뒤 반응형·키보드 접근성을 점검해 고쳤습니다."
 ShowToc: true
+weight: 2
 ---
 
 ## 기간과 진행 상태 {#period}
