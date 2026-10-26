@@ -25,3 +25,24 @@ summary:focus-visible,
     padding: 0 6px;
     border-radius: 4px;
 }
+
+/* 본문 바로가기: 평소에는 숨기고 Tab으로 초점이 오면 왼쪽 위에 표시 */
+.skip-link {
+    position: absolute;
+    left: 8px;
+    top: -48px;
+    z-index: 100;
+    padding: 8px 12px;
+    background: var(--theme);
+    color: var(--primary);
+    border: 2px solid #2563eb;
+    border-radius: 4px;
+}
+
+.skip-link:focus {
+    top: 8px;
+}
+
+#main-content:focus {
+    outline: none;
+}
