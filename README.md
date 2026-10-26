@@ -76,8 +76,14 @@ python .github/pages_build.py --build
 | 소개 페이지 (자기소개·관심 분야·학습 목표·역량) | `site/content/about.md` |
 | 활동 목록 페이지 설명 | `site/content/projects/_index.md` |
 | 대표 활동 글 | `site/content/projects/activity-1.md` |
-| 키보드 초점 표시 등 추가 스타일 | `site/assets/css/extended/focus.css` |
+| 키보드 초점 표시·본문 바로가기·동작 줄이기 스타일 | `site/assets/css/extended/focus.css` |
 | 홈 GitHub 아이콘 링크 (접근 가능한 이름 추가) | `site/layouts/_partials/social_icons.html` |
+| 상단 메뉴·다크모드 버튼 이름·본문 바로가기 링크 | `site/layouts/_partials/header.html` |
+| 푸터 문구·맨 위로 버튼 이름 | `site/layouts/_partials/footer.html` |
+| 경로 표시(현재 위치) 영역 이름 | `site/layouts/_partials/breadcrumbs.html` |
+| 본문 영역 id(본문 바로가기 대상) | `site/layouts/baseof.html` |
+| 없는 주소로 왔을 때 보이는 안내 | `site/layouts/404.html` |
+| 404·긴 URL·표 스타일 | `site/assets/css/extended/pages.css` |
 | 파비콘 | `site/static/` |
 
 테마 원본 `site/themes/template/`은 직접 고치지 않습니다. 바꿀 부분은 위 파일처럼 `site/` 아래에 같은 경로로 만들어 덮어씁니다.
