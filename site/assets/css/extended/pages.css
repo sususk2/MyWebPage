@@ -22,3 +22,10 @@
 .not-found-page a {
     text-decoration: underline;
 }
+
+/* 긴 URL·파일 경로가 좁은 화면에서 가로로 넘치지 않게 줄바꿈 */
+.post-content a,
+.post-content code,
+.post-title {
+    overflow-wrap: anywhere;
+}
