@@ -29,3 +29,10 @@
 .post-title {
     overflow-wrap: anywhere;
 }
+
+/* 표가 화면보다 넓어지면 표 안에서만 가로 스크롤 */
+.post-content table {
+    display: block;
+    max-width: 100%;
+    overflow-x: auto;
+}
