@@ -1,0 +1,12 @@
+{{- /* 테마 원본 404(숫자만 표시)를 덮어씀: 안내 문구와 돌아갈 링크 제공 */ -}}
+{{- define "main" }}
+<div class="not-found-page">
+    <h1>404</h1>
+    <p>요청한 페이지를 찾을 수 없습니다. 주소가 바뀌었거나 잘못 입력되었을 수 있습니다.</p>
+    <ul>
+        <li><a href="{{ "" | absLangURL }}">홈으로 가기</a></li>
+        <li><a href="{{ "about/" | absLangURL }}">소개 보기</a></li>
+        <li><a href="{{ "projects/" | absLangURL }}">활동 보기</a></li>
+    </ul>
+</div>
+{{- end }}{{/* end main */ -}}
