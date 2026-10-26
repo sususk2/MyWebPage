@@ -22,5 +22,56 @@
   "theme": [
     "template"
   ],
-  "title": "hugo-papermod"
+  "title": "sususk2 포트폴리오",
+  "locale": "ko-KR",
+  "defaultContentLanguage": "ko",
+  "params": {
+    "env": "production",
+    "defaultTheme": "auto",
+    "ShowBreadCrumbs": true,
+    "profileMode": {
+      "enabled": true,
+      "title": "sususk2",
+      "subtitle": "배우고 만든 것을 기록하는 공간입니다.",
+      "buttons": [
+        {
+          "name": "소개",
+          "url": "about/"
+        },
+        {
+          "name": "활동",
+          "url": "projects/"
+        }
+      ]
+    },
+    "socialIcons": [
+      {
+        "name": "github",
+        "title": "GitHub",
+        "url": "https://github.com/sususk2"
+      }
+    ]
+  },
+  "menu": {
+    "main": [
+      {
+        "identifier": "about",
+        "name": "소개",
+        "pageRef": "/about",
+        "weight": 10
+      },
+      {
+        "identifier": "projects",
+        "name": "활동",
+        "pageRef": "/projects",
+        "weight": 20
+      },
+      {
+        "identifier": "github",
+        "name": "GitHub",
+        "url": "https://github.com/sususk2",
+        "weight": 30
+      }
+    ]
+  }
 }
