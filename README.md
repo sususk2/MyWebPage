@@ -1,93 +1,135 @@
-# Hugo PaperMod
+# 최민준 포트폴리오
 
-**A fast, clean, and responsive theme for [Hugo](https://gohugo.io/).**
+2026학년도 초급프로젝트 과제 1, Hugo로 만든 개인 소개 웹사이트입니다.
 
-[![hugo-papermod](https://img.shields.io/badge/Hugo--Themes-@PaperMod-blue)](https://themes.gohugo.io/themes/hugo-papermod/)
-[![Minimum Hugo Version](https://img.shields.io/static/v1?label=Hugo&message=v0.158.0%2B&color=blue&logo=hugo)](https://github.com/gohugoio/hugo/releases/tag/v0.158.0)
-[![Discord](https://img.shields.io/discord/971046860317921340?label=Discord&logo=discord)](https://discord.gg/ahpmTvhVmp)
+- 사이트: https://sususk2.github.io/MyWebPage/
+- 저장소: https://github.com/sususk2/MyWebPage
+- 배포: `main`에 push하면 GitHub Actions가 빌드해서 GitHub Pages에 올립니다 ([Actions 실행 기록](https://github.com/sususk2/MyWebPage/actions))
 
-> Based on [hugo-paper](https://github.com/nanxiaobei/hugo-paper/tree/4330c8b12aa48bfdecbcad6ad66145f679a430b3), with additional features and customization options.
+## 목차
 
-<table>
-	<tbody>
-		<tr>
-			<td>Live Demo</td>
-			<td><a href="https://adityatelange.github.io/hugo-PaperMod/">adityatelange.github.io/hugo-PaperMod</a></td>
-		</tr>
-		<tr>
-			<td>Documentation 📚</td>
-			<td><a href="https://github.com/adityatelange/hugo-PaperMod/wiki">Github Wiki</a></td>
-		</tr>
-		<tr>
-			<td>Example Site Source</td>
-			<td><a href="https://github.com/adityatelange/hugo-PaperMod/tree/exampleSite">exampleSite branch</a></td>
-		</tr>
-		<tr>
-			<td><a href="https://www.star-history.com/adityatelange/hugo-papermod"><img src="https://api.star-history.com/badge?repo=adityatelange/hugo-PaperMod&amp;theme=dark" alt="Star History Rank" /></a></td>
-			<td><a href="https://ko-fi.com/H2H229ZWH"><img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi" /></a></td>
-		</tr>
-	</tbody>
-</table>
+1. [사용 도구와 버전](#사용-도구와-버전)
+2. [설치](#설치)
+3. [내 PC에서 사이트 확인하기](#내-pc에서-사이트-확인하기)
+4. [수정할 파일 위치](#수정할-파일-위치)
+5. [수정 후 재배포와 확인](#수정-후-재배포와-확인)
+6. [폴더 구성](#폴더-구성)
+7. [출처와 라이선스](#출처와-라이선스)
 
+## 사용 도구와 버전
 
-<p align="center">
-  <img src="https://user-images.githubusercontent.com/21258296/114303440-bfc0ae80-9aeb-11eb-8cfa-48a4bb385a6d.png" alt="Mockup image" title="Mockup"/>
-</p>
+| 도구 | 버전 | 쓰는 곳 |
+|------|------|---------|
+| Hugo extended | 0.167.0 | 사이트 빌드 (Actions 워크플로 `.github/workflows/hugo-pages.yml`에서 같은 버전 지정) |
+| 테마 PaperMod | master, 2026-10-26 Download ZIP | `site/themes/template/` |
+| Python | 3.9 이상 | 배포 준비·빌드 스크립트 (`prepare_github_pages.py`, `.github/pages_build.py`) |
+| Git | Git for Windows (Git Bash) | 커밋·push |
 
----
+## 설치
 
-## Features 💥
+Windows 기준입니다. 처음 한 번만 하면 됩니다.
 
-`☄️ Fast | ☁️ Fluent | 🌙 Smooth | 📱 Responsive`
+1. **Git**: https://git-scm.com 에서 Git for Windows 설치 (Git Bash 포함)
+2. **Python**: https://www.python.org 에서 3.9 이상 설치
+3. **Hugo extended 0.167.0**: [릴리스 페이지](https://github.com/gohugoio/hugo/releases/tag/v0.167.0)에서 `hugo_extended_0.167.0_windows-amd64.zip`을 받아 압축을 풀고, `hugo.exe`가 있는 폴더를 PATH에 추가
+4. 설치 확인 (Git Bash):
 
-- **Asset pipeline** -- Hugo's built-in asset generator with fingerprinting, bundling, and minification.
-- **Three layout modes** -- [Regular](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#regular-mode-default-mode), [Home-Info](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#home-info-mode), and [Profile](https://github.com/adityatelange/hugo-PaperMod/wiki/Features#profile-mode).
-- **Light and dark themes** -- Automatic switching based on browser preference, plus a manual toggle.
-- **Multilingual support** -- Includes a built-in language selector.
-- **Search** -- Client-side search powered by Fuse.js.
-- **SEO optimized** -- Open Graph, Twitter Cards, and Schema.org structured data out of the box.
-- **Cover images** -- Per-post cover images with responsive image support.
-- **Table of contents** -- Auto-generated from heading structure.
-- **Multiple authors** -- Native support for multi-author sites.
-- **Social icons and share buttons** -- Configurable social links and per-post sharing.
-- **Breadcrumb navigation**
-- **Post archives and taxonomies**
-- **Code block copy buttons** -- One-click copying with Chroma syntax highlighting.
-- **Related post suggestions**
-- **Zero JS build dependencies** -- No webpack, Node.js, or other tooling required.
+```bash
+git --version
+python --version
+hugo version     # hugo v0.167.0-...+extended 가 나오면 정상
+```
 
-| Topic                                                                                             | Description                                     |
-| ------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| **[Installation guide](https://github.com/adityatelange/hugo-PaperMod/wiki/Installation)**        | Detailed installation and update instructions   |
-| **[Features wiki page](https://github.com/adityatelange/hugo-PaperMod/wiki/Features)**            | In-depth explanations of all features           |
-| **[FAQ wiki](https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs)**                          | Common questions and configuration walkthroughs |
-| **[Icons wiki](https://github.com/adityatelange/hugo-PaperMod/wiki/Icons)**                       | Documentation for social icons and share icons  |
-| **[Variables wiki](https://github.com/adityatelange/hugo-PaperMod/wiki/Variables)**               | List of all available template variables        |
-| **[Overiding templates](https://github.com/adityatelange/hugo-PaperMod/wiki/Template_Overrides)** | Guide to customizing templates without forking  |
-| **[Releases](https://github.com/adityatelange/hugo-PaperMod/releases)**                           | Detailed history of releases                    |
+5. 저장소 받기:
 
----
+```bash
+git clone https://github.com/sususk2/MyWebPage.git
+cd MyWebPage
+```
 
-## Performance ☄️
+## 내 PC에서 사이트 확인하기
 
-PaperMod consistently scores near-perfect results on [Pagespeed Insights](https://pagespeed.web.dev/report?url=https://adityatelange.github.io/hugo-PaperMod/).
+**미리보기 (수정하면 바로 반영)**
 
-<img width="481" height="116" alt="image" src="https://github.com/user-attachments/assets/497d831b-d143-4a46-bc11-b1d7f8ef4a83" />
+```bash
+cd site
+hugo server --config pages.json --themesDir themes --theme template
+```
 
----
+브라우저에서 http://localhost:1313/MyWebPage/ 를 엽니다. 끄려면 `Ctrl + C`.
 
-## Support 🫶
+**배포와 같은 방식으로 빌드**
 
-- Star this repository to show your support.
-- Share PaperMod with others who might find it useful.
-- Sponsor the project on [GitHub Sponsors](https://github.com/sponsors/adityatelange) or [Ko-Fi](https://ko-fi.com/adityatelange).
+저장소 맨 위 폴더에서 실행합니다. 결과는 `public/`에 생기며 Git에는 올리지 않습니다(`.gitignore`).
 
----
+```bash
+python .github/pages_build.py --build
+```
 
-## Special Thanks 🌟
+`빌드 완료`가 나오고 `public/index.html`이 생기면 정상입니다.
 
-- [Highlight.js](https://github.com/highlightjs/highlight.js)
-- [Fuse.js](https://github.com/krisk/fuse)
-- [Feather Icons](https://github.com/feathericons/feather)
-- [Simple Icons](https://github.com/simple-icons/simple-icons)
-- All contributors and supporters
+## 수정할 파일 위치
+
+| 바꾸고 싶은 것 | 파일 |
+|----------------|------|
+| 사이트 제목, 홈 이름·한 줄 소개, 홈 버튼, 상단 메뉴, GitHub 링크, 언어 | `site/pages.json` |
+| 소개 페이지 (자기소개·관심 분야·학습 목표·역량) | `site/content/about.md` |
+| 활동 목록 페이지 설명 | `site/content/projects/_index.md` |
+| 대표 활동 글 | `site/content/projects/activity-1.md` |
+| 키보드 초점 표시 등 추가 스타일 | `site/assets/css/extended/focus.css` |
+| 홈 GitHub 아이콘 링크 (접근 가능한 이름 추가) | `site/layouts/_partials/social_icons.html` |
+| 파비콘 | `site/static/` |
+
+테마 원본 `site/themes/template/`은 직접 고치지 않습니다. 바꿀 부분은 위 파일처럼 `site/` 아래에 같은 경로로 만들어 덮어씁니다.
+
+글에 새 섹션을 넣을 때는 `## 제목 {#영문-앵커}`처럼 앵커를 붙이면 `about/#영문-앵커` 주소로 바로 열 수 있습니다. 글의 `date`를 미래 날짜로 쓰면 Hugo가 그 글을 빌드에서 빼므로 오늘 이전 날짜로 씁니다.
+
+## 수정 후 재배포와 확인
+
+1. 파일 수정 후 `hugo server`로 미리 확인
+2. 커밋하고 push
+
+```bash
+git add 바꾼-파일
+git commit -m "content: 무엇을 바꿨는지"
+git push origin main
+```
+
+3. [Actions](https://github.com/sususk2/MyWebPage/actions)에서 `Deploy Hugo to GitHub Pages` 실행이 초록 체크(build·deploy 성공)인지 확인 (1~2분)
+4. 시크릿 창에서 https://sususk2.github.io/MyWebPage/ 를 열어 바뀐 내용 확인. 예전 화면이 보이면 `Ctrl + F5`
+
+실패(빨간 X)하면 실행을 열어 build 단계 로그의 `ERROR` 줄을 확인합니다. GitHub 저장소의 Settings → Pages → Source는 `GitHub Actions`로 설정되어 있어야 합니다.
+
+## 폴더 구성
+
+```
+MyWebPage/
+├── site/                     Hugo 사이트 (실제로 수정하는 곳)
+│   ├── pages.json            사이트 설정 (baseURL, 메뉴, 프로필 등)
+│   ├── content/              페이지 글 (about.md, projects/)
+│   ├── assets/css/extended/  추가 CSS
+│   ├── layouts/_partials/    테마 부분 덮어쓰기
+│   ├── static/               파비콘 등 그대로 복사되는 파일
+│   └── themes/template/      PaperMod 테마 원본
+├── .github/
+│   ├── workflows/hugo-pages.yml  push 시 빌드·배포
+│   └── pages_build.py            Actions가 쓰는 빌드 스크립트
+├── prepare_github_pages.py   수업 제공 배포 준비 스크립트 (처음 한 번 실행)
+├── .github-pages.json        준비 스크립트가 만든 빌드 정보
+├── LICENSE                   PaperMod 라이선스 (MIT)
+└── assets/ layouts/ i18n/ …  Download ZIP 원본 테마 파일 (빌드에는 site/themes/template 사용)
+```
+
+## 출처와 라이선스
+
+| 자료 | 사용 위치 | 구분 | 출처 | 이용 조건 |
+|------|-----------|------|------|-----------|
+| PaperMod 테마 | `site/themes/template/`, 저장소 루트 원본 파일 | 외부 자료 | https://github.com/adityatelange/hugo-PaperMod | MIT License (`LICENSE` 유지, 사이트 하단 "Powered by Hugo & PaperMod" 표시 유지) |
+| Hugo | 빌드 도구 | 외부 도구 | https://gohugo.io | Apache License 2.0 |
+| 배포 준비 스크립트·워크플로 | `prepare_github_pages.py`, `.github/` | 수업 제공 | 초급프로젝트 수업 자료 (v3.1) | 수업 자료 |
+| 사이트 설정·글 | `site/pages.json`, `site/content/` | AI 초안 + 본인 확인 | Claude로 초안 작성, 본인 정보·사실 확인과 수정 | 본 과제용 |
+| 추가 CSS·아이콘 링크 덮어쓰기 | `site/assets/css/extended/focus.css`, `site/layouts/_partials/social_icons.html` | AI 생성 후 본인 검토 | Claude | 본 과제용 |
+| 파비콘 5개 | `site/static/` | AI 생성 | Claude (Python Pillow로 생성) | 본 과제용 |
+| 대표 활동 근거 | 활동 페이지 링크 | 본인 팀 프로젝트 | https://github.com/sususk2/capstone | 팀 저장소 |
+
+이미지·사진은 사용하지 않았습니다.
