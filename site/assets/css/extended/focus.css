@@ -8,10 +8,10 @@ summary:focus-visible,
     border-radius: 4px;
 }
 
-.dark a:focus-visible,
-.dark button:focus-visible,
-.dark summary:focus-visible,
-.dark [tabindex]:focus-visible {
+[data-theme="dark"] a:focus-visible,
+[data-theme="dark"] button:focus-visible,
+[data-theme="dark"] summary:focus-visible,
+[data-theme="dark"] [tabindex]:focus-visible {
     outline-color: #93c5fd;
 }
 
