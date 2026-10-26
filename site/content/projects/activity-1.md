@@ -26,12 +26,12 @@ ShowToc: true
 
 본인이 진행한 작업:
 
-1. 한전 제공 계통 데이터를 저장소에 정리 (공개 허락 범위에 맞춰 원본 보관)
-2. AI 리포트 생성 프로토타입 (`ai_report/report.py`)
-3. Claude 외에 Gemini도 고를 수 있게 설정 추가 (무료 키로 시험하기 위해)
-4. 실제 계통에서 응답 지연(60초 초과) 문제 해결 — 대기 시간 120초, 환경 변수로 조절
-5. 단락용량 기준을 화면 진단표와 같게 맞춤
-6. 비전문가용 "쉬운 설명" 모드 추가와 문장 품질 개선
+1. 한전 제공 계통 데이터를 저장소에 정리 (공개 허락 범위에 맞춰 원본 보관) — [커밋](https://github.com/sususk2/capstone/commit/93ab1971776567335e7b890f05534020abdba70c)
+2. AI 리포트 생성 프로토타입 (`ai_report/report.py`) — [커밋](https://github.com/sususk2/capstone/commit/3e87412ae31abf997f07ef85b2e811a8f337f0ab)
+3. Claude 외에 Gemini도 고를 수 있게 설정 추가 (무료 키로 시험하기 위해) — [커밋](https://github.com/sususk2/capstone/commit/5d23b1b54ffdb17d47f48fba6ecdc58a5e309f72)
+4. 실제 계통에서 응답 지연(60초 초과) 문제 해결 — 대기 시간 120초, 환경 변수로 조절 — [커밋](https://github.com/sususk2/capstone/commit/5384c6f1e7841a13de9527029b1f4866bfc60a4f)
+5. 단락용량 기준을 화면 진단표와 같게 맞춤 — [커밋](https://github.com/sususk2/capstone/commit/950b921299e939dac50bd16dce41faa057390cf1)
+6. 비전문가용 "쉬운 설명" 모드 추가와 문장 품질 개선 — [추가](https://github.com/sususk2/capstone/commit/efb92555c48567808915a6b3db4710385abf5f6d) · [1차 개선](https://github.com/sususk2/capstone/commit/56459cf91ef9920b05c5ce17fb4bbbbc0677eeaa) · [2차 개선](https://github.com/sususk2/capstone/commit/6369b6ee70448ba1f2c34c0e408cfc333b7e4eef)
 
 코드 작성에는 AI 코딩 도구(Claude Code)를 활용했습니다. 무엇을 만들지 정하고, 결과를 실행해 확인하고, 팀 코드에 반영할 범위를 정하는 일은 직접 했습니다.
 
