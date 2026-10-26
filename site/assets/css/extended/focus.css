@@ -1,0 +1,21 @@
+/* 키보드 초점 표시 강화 (P43): 테마 기본 초점선이 0.8px로 얇아 잘 보이지 않음 */
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid #2563eb;
+    outline-offset: 3px;
+    border-radius: 4px;
+}
+
+.dark a:focus-visible,
+.dark button:focus-visible,
+.dark summary:focus-visible,
+.dark [tabindex]:focus-visible {
+    outline-color: #93c5fd;
+}
+
+/* 상단 메뉴(#menu)는 가로 스크롤 영역이라 바깥 초점선이 잘림 → 안쪽에 표시 */
+#menu a:focus-visible {
+    outline-offset: -3px;
+}
