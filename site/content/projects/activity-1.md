@@ -58,6 +58,7 @@ ShowToc: true
 - 결과 화면에서 "AI 해설 만들기"를 누르면 진단·원인·해결책 카드가 표시됩니다.
 - AI 리포트의 문제 판정 기준(단락용량 300 MVA 등)을 화면 진단표와 같은 규칙으로 맞췄습니다.
 - 비전문가용 "쉬운 설명" 리포트가 현재 화면의 기본 설명 방식으로 쓰이고 있습니다.
+- AI 응답이 실패하거나 형식이 틀리면 화면이 멈추지 않고 서버가 503 오류와 이유를 돌려주도록 처리했습니다 (`backend/main.py`).
 - 코드: [ai_report/report.py](https://github.com/sususk2/capstone/blob/main/ai_report/report.py) · [저장소](https://github.com/sususk2/capstone)
 - 팀 저장소 반영: Pull Request #4, #6, #8
 
