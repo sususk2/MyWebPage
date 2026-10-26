@@ -118,6 +118,21 @@ git push origin main
 
 실패(빨간 X)하면 실행을 열어 build 단계 로그의 `ERROR` 줄을 확인합니다. GitHub 저장소의 Settings → Pages → Source는 `GitHub Actions`로 설정되어 있어야 합니다.
 
+## 커밋 메시지 규칙
+
+`종류: 무엇을 왜 바꿨는지` 형식으로 한 커밋에 한 가지 작업만 담습니다.
+
+| 종류 | 쓰는 경우 |
+|------|-----------|
+| `config` | `site/pages.json` 설정 변경 |
+| `content` | 페이지 글 작성·수정 |
+| `style` | CSS 변경 |
+| `a11y` | 접근성 개선 (키보드, 화면 낭독기 이름 등) |
+| `feat` | 새 페이지·기능 추가 |
+| `fix` | 잘못된 동작·내용 수정 |
+| `docs` | README 등 문서 |
+| `chore` | 저장소 관리 파일 (.gitignore 등) |
+
 ## 자주 나는 문제
 
 | 증상 | 원인 | 해결 |
