@@ -28,7 +28,7 @@
 | 소개 | `/MyWebPage/about/` | 자기소개 `#intro`, 관심 분야 `#interests`, 학습 목표 `#goals`, 역량 `#skills` |
 | 활동 목록 | `/MyWebPage/projects/` | 활동 2개 |
 | 대표 활동 | `/MyWebPage/projects/activity-1/` | 캡스톤 AI 리포트: `#period` `#purpose` `#role` `#process` `#result` `#lessons` |
-| 활동 2 | `/MyWebPage/projects/portfolio-site/` | 이 사이트 제작 과정 |
+| 활동 2 | `/MyWebPage/projects/portfolio-site/` | 이 사이트 제작 과정, 점검 기록 `#checks` |
 | 404 | 없는 주소 | 안내 문구와 홈·소개·활동 링크 |
 
 ## 사용 도구와 버전
