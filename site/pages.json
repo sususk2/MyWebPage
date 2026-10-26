@@ -22,7 +22,7 @@
   "theme": [
     "template"
   ],
-  "title": "sususk2 포트폴리오",
+  "title": "최민준 포트폴리오",
   "locale": "ko-KR",
   "defaultContentLanguage": "ko",
   "params": {
@@ -31,7 +31,7 @@
     "ShowBreadCrumbs": true,
     "profileMode": {
       "enabled": true,
-      "title": "sususk2",
+      "title": "최민준",
       "subtitle": "배우고 만든 것을 기록하는 공간입니다.",
       "buttons": [
         {

@@ -1,6 +1,6 @@
 ---
 title: "소개"
-description: "sususk2 자기소개"
+description: "최민준 자기소개"
 ShowToc: true
 ---
 
