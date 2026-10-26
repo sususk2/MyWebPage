@@ -15,12 +15,7 @@ ShowToc: true
 
 ## 역량과 사용 사례 {#skills}
 
-숙련도보다 실제로 써 본 경험을 기준으로 적었습니다.
-
 - **Python** — 캡스톤 `ai_report/report.py`에서 시뮬레이션 결과로 저전압·과부하·역조류를 판정하고 프롬프트를 만드는 코드 ([대표 활동](../projects/activity-1/#process))
 - **AI API·프롬프트 설계** — Claude·Gemini API로 리포트 생성, 출력 형식(진단·원인·해결책) 고정, 쉬운 설명 지침 개선
-- **Git·GitHub** — 캡스톤 팀 저장소에 Pull Request(#4, #6, #8)로 작업 반영, 이 사이트의 커밋·push 관리
-- **Hugo·Markdown·GitHub Actions** — 이 포트폴리오 사이트 제작과 자동 배포 ([저장소](https://github.com/sususk2/MyWebPage))
-- **AI 코딩 도구 (Claude Code)** — 구현할 내용을 정해 요청하고, 결과를 실행·확인한 뒤 팀 코드에 반영할 범위를 결정
 
 [대표 활동 보기](../projects/)
