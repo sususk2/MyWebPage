@@ -106,6 +106,15 @@ git push origin main
 
 실패(빨간 X)하면 실행을 열어 build 단계 로그의 `ERROR` 줄을 확인합니다. GitHub 저장소의 Settings → Pages → Source는 `GitHub Actions`로 설정되어 있어야 합니다.
 
+## 자주 나는 문제
+
+| 증상 | 원인 | 해결 |
+|------|------|------|
+| `git push`에서 `Password authentication is not supported` | GitHub는 Git 작업에 계정 비밀번호를 받지 않음. 저장된 로그인 정보가 만료됨 | `git config --show-origin --get-all credential.helper`로 저장 방식 확인 → `printf "protocol=https\nhost=github.com\n\n" \| git credential reject`로 저장 정보 삭제 → 다시 push하고 브라우저로 로그인 |
+| push했는데 사이트가 그대로 | 브라우저 캐시(최대 약 10분) 또는 Actions 실행 중 | Actions가 초록 체크인지 확인 → 시크릿 창이나 `Ctrl + F5` |
+| 새 글이 사이트에 안 나옴 | 글의 `date`가 미래 시각 | `date`를 오늘 이전으로 (시간대는 `Asia/Seoul`) |
+| 첫 실행이 실패 | Pages Source를 설정하기 전에 push함 | Settings → Pages → Source를 `GitHub Actions`로 바꾼 뒤 실패한 실행을 Re-run |
+
 ## 폴더 구성
 
 ```
