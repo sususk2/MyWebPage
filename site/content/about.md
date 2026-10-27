@@ -23,7 +23,7 @@ ShowToc: true
 
 ## 역량과 사용 사례 {#skills}
 
-- **Python** — 캡스톤 `ai_report/report.py`에서 시뮬레이션 결과로 저전압·과부하·역조류를 판정하고 프롬프트를 만드는 코드 ([대표 활동](../projects/activity-1/#process))
-- **AI API·프롬프트 설계** — Claude·Gemini API로 리포트 생성, 출력 형식(진단·원인·해결책) 고정, 쉬운 설명 지침 개선
+- **Python** — 캡스톤 AI 리포트 기능에서 시뮬레이션 결과를 판정하고 AI에 보낼 내용을 정리하는 데 사용 ([대표 활동](../projects/activity-1/#process))
+- **AI 프롬프트 설계** — 리포트가 진단·원인·해결책 형식으로 나오도록 지시문을 만들고, 쉬운 설명이 되도록 다듬음
 
 [대표 활동 보기](../projects/)
