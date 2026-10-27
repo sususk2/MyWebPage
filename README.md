@@ -101,6 +101,7 @@ python .github/pages_build.py --build
 | 페이지 제목(404 한국어)·검색 노출(404 noindex) | `site/layouts/_partials/head.html` |
 | 404·긴 URL·표 스타일 | `site/assets/css/extended/pages.css` |
 | 파비콘 | `site/static/` |
+| 홈 프로필 사진과 대체 설명 | `site/assets/images/profile.jpg`, `site/pages.json`의 `profileMode.imageUrl`·`imageTitle` |
 
 테마 원본 `site/themes/template/`은 직접 고치지 않습니다. 바꿀 부분은 위 파일처럼 `site/` 아래에 같은 경로로 만들어 덮어씁니다.
 
@@ -203,9 +204,10 @@ MyWebPage/
 | 추가 CSS | `site/assets/css/extended/focus.css`, `pages.css` | AI 생성 후 본인 검토 | Claude | 본 과제용 |
 | 레이아웃 덮어쓰기 | `site/layouts/` (head·header·footer·breadcrumbs·baseof·social_icons·404) | 외부 자료 수정 | PaperMod 원본 파일을 복사해 바꾼 줄만 주석으로 표시 (Claude 도움) | MIT License (원본 출처 유지) |
 | 파비콘 5개 | `site/static/` | AI 생성 | Claude (Python Pillow로 생성) | 본 과제용 |
+| 홈 프로필 사진 | `site/assets/images/profile.jpg` | 직접 촬영 | 본인 휴대폰 촬영 | 본 과제용 (메타데이터 제거) |
 | 대표 활동 근거 | 활동 페이지 링크 | 본인 팀 프로젝트 | https://github.com/sususk2/capstone | 팀 저장소 |
 
-이미지·사진은 사용하지 않았습니다.
+홈 프로필 사진(`site/assets/images/profile.jpg`)은 직접 촬영한 사진을 정사각형으로 잘라 300px로 줄이고 촬영 위치 등 메타데이터를 지운 것입니다.
 
 ### AI 활용 범위
 
