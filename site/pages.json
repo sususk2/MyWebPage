@@ -42,7 +42,9 @@
           "name": "활동",
           "url": "projects/"
         }
-      ]
+      ],
+      "imageUrl": "images/profile.jpg",
+      "imageTitle": "연못에서 물속으로 머리를 넣은 오리 (직접 촬영)"
     },
     "socialIcons": [
       {
