@@ -30,7 +30,7 @@ summary:focus-visible,
 .skip-link {
     position: absolute;
     left: 8px;
-    top: -48px;
+    top: -200px;
     z-index: 100;
     padding: 8px 12px;
     background: var(--theme);
